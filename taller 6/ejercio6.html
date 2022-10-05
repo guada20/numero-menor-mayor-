@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+       let numero1;
+       let numero2;
+       let numero3;
+        
+        numero1= (prompt("ingrese primer numero"));
+        numero2= (prompt("ingrese segundo numero"));
+        numero3= (prompt("ingrese tercer numero "));
+
+       if(numero1==numero2&&numero2==numero3){
+        alert("los numeros son iguales");
+       }else if(numero1>=numero2&&numero1>=numero3&&numero2>=numero3){
+         alert("de mayor a menor es :"+numero1+""+numero2+""+numero3);
+       }else if(numero1>=numero2&&numero1>=numero3&&numero2<=numero3){
+        alert("de mayor a menor es"+numero1+""+numero3+""+numero2);
+       }else if(numero2>=numero1&&numero2>=numero3&&numero1>=numero3){
+        alert("de mayor a menor es"+numero2+""+numero1+""+numero3);
+       }else if(numero2>=numero1&&numero2>=numero3&&numero1<=numero3){
+        alert("de mayor a menor es"+numero2+""+numero3+""+numero1);
+       }else if(numero3>=numero1&&numero3>=numero2&&numero1>=numero2){
+         alert("de mayor a menor es"+numero3+""+numero1+""+numero2);
+       }else if(numero3>=numero1&&numero3>=numero2&&numero1<=numero2){
+        alert("de mayor a menor es"+numero3+""+numero2+""+numero1);
+       }
+
+      //......................DE MENOR A MAYOR...............//
+
+      if(numero1<=numero2&&numero1<=numero3&&numero2<=numero3){
+         alert("de menor a mayor es :"+numero1+""+numero2+""+numero3);
+       }else if(numero1<=numero2&&numero1<=numero3&&numero2>=numero3){
+        alert("de menor a mayor es"+numero1+""+numero3+""+numero2);
+       }else if(numero2<=numero1&&numero2<=numero3&&numero1<=numero3){
+        alert("de menor a mayor es"+numero2+""+numero1+""+numero3);
+       }else if(numero2<=numero1&&numero2<=numero3&&numero1>=numero3){
+        alert("de menor a mayor es"+numero2+""+numero3+""+numero1);
+       }else if(numero3<=numero1&&numero3<=numero2&&numero1<=numero2){
+         alert("de menor a mayor es"+numero3+""+numero1+""+numero2);
+       }else if(numero3<=numero1&&numero3<=numero2&&numero1>=numero2){
+        alert("de menor a mayor es"+numero3+""+numero2+""+numero1);
+       }
+
+
+    
+    </script>
+</body>
+</html>
